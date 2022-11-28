@@ -1,0 +1,44 @@
+<div id="d"></div>
+<div id="a"></div>
+<div id="b"><div id="c"></div></div>
+
+<style>
+  * {
+    background: #191919;
+  }
+  #a {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #f9e492;
+    transform: translate(46%, 21%);
+  }
+  #b {
+    position: absolute;
+    top: 200;
+    left: 100;
+    width: 199;
+    height: 200.2;
+    background: #4f77ff;
+    transform: rotate(45deg);
+    overflow: hidden;
+  }
+  #c {
+    position: absolute;
+    top: -106;
+    left: -106;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #191919;
+  }
+  #d {
+    position: absolute;
+    top: 300;
+    left: 0;
+    background-color: #191919;
+    width: 400px;
+    height: 200px;
+    z-index: 2;
+  }
+</style>

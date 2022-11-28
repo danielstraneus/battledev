@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "antique";
+  src: url("./public/fonts/Antique-Legacy-Medium.woff") format("woff");
+}
+
+body {
+  margin: 2em;
+  width: 400px;
+  background-color: #141414;
+}
+
+ul {
+  list-style: none;
+  margin-top: 2em;
+  padding: 0;
+  animation: fade 2s ease-in;
+}
+span {
+  display: inline-block;
+  width: 40px;
+  margin-left: 1em;
+}
+
+.hide {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  filter: blur(4px) grayscale(100%);
+  transition: 1s ease-out;
+  margin-top: 7em;
+  margin-left: 12em;
+  z-index: -1;
+  transform: rotate(720deg);
+}
+img {
+  display: block;
+  border-radius: 160px;
+  /* border: 5px solid #fff; */
+  width: 300px;
+  height: 300px;
+  object-fit: none;
+}
+
+.show:hover + .hide {
+  color: red;
+  position: absolute;
+  opacity: 1;
+  filter: blur(0px) grayscale(100%);
+  transform: rotate(0deg);
+}
+
+.show:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+h1 {
+  margin-bottom: 0em;
+}
+h1:hover {
+  cursor: default;
+}
+h1,
+a {
+  font-family: "antique", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  letter-spacing: -1.1px;
+  color: #fff;
+  opacity: 0.6;
+  text-transform: lowercase;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+a:visited {
+  text-decoration: none;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
